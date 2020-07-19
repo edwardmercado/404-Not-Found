@@ -17,18 +17,19 @@ body{
 }
 
 .big-container-heading{
-    text-align: left;
+    display: block;
 }
 
-.big-container-heading h1{
-    font-size: 5rem;
+.big-word{
+    text-align: left;
     margin-bottom: 1rem;
     word-spacing: 25px;
+    font-size: 2.5rem;
 }
 
-.big-container-heading p{
-    display: inline-block;
-    width: 280px;
+.big-sentence{
+    display: inline;
+    text-align: left;
     line-height: 2rem;
     font-size: 1.2rem;
     word-spacing: 8px;
@@ -57,6 +58,31 @@ body{
         float: clear;
         text-align: center;
         margin: 0 0 3rem 0;
-        width: 30rem;
+        width: 100%;
+    }
+
+    .big-word{
+        float: clear;
+        display: block;
+        text-align: left;
+        word-spacing: 5px;
+    }
+
+    .big-sentence{
+        float: clear;
+        text-align: left;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    .big-content-container img{
+        float: clear;
+        margin: 0 0 3rem 0;
+    }
+
+    .big-sentence{
+        float: left;
+        text-align: left;
     }
 }
